@@ -1,0 +1,9 @@
+.game-card-container[b-e0wdd07vkt] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}

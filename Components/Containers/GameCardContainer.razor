@@ -1,0 +1,50 @@
+@inject HttpClient httpClient
+
+<div class="game-card-container">
+    @if (games == null) {
+        <p>Loading</p>
+    }
+    else {
+        <GameCard />
+        <GameCard />
+        <GameCard />
+    }
+</div>
+
+@code {
+    public class Game
+    {
+        public int Id { get; set; } = 0;
+        public Cover Cover { get; set; }
+        public string Name { get; set; } = "";
+        public double Rating { get; set; } = 0;
+    }
+
+    public class Cover
+    {
+        public int Id { get; set; } = 0;
+        public string Url { get; set; } = "";
+    }
+
+    [Parameter]
+    public string Endpoint {get; set;} = "";
+
+    //call backend for gamedata
+    @code {
+    private List<Game>? games = new List<Game>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await httpClient.GetAsync("http://localhost:5249/games");
+        if (response.IsSuccessStatusCode)
+        {
+            games = await response.Content.ReadFromJsonAsync<List<Game>>();
+        }
+        else
+        {
+            // Handle error
+        }
+    }
+}
+
+}

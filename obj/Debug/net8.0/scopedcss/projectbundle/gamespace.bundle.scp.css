@@ -1,3 +1,13 @@
+/* _content/gamespace/Components/Containers/GameCardContainer.razor.rz.scp.css */
+.game-card-container[b-e0wdd07vkt] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
 /* _content/gamespace/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-pdrag3v85z] {
     position: relative;
