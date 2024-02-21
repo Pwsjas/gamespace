@@ -1,0 +1,24 @@
+.game-card[b-t3qipg2lkx] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height:fit-content;
+    gap: 8px;
+
+    border: 1px solid black;
+}
+
+.game-card-info[b-t3qipg2lkx] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-card-image[b-t3qipg2lkx] {
+    width: 264px;
+    height: 374px;
+}

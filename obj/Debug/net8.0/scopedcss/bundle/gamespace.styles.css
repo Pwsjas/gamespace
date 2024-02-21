@@ -5,67 +5,6 @@
     flex-direction: column;
 }
 
-main[b-pdrag3v85z] {
-    flex: 1;
-}
-
-.top-row[b-pdrag3v85z] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-pdrag3v85z]  a, .top-row[b-pdrag3v85z]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
-
-    .top-row[b-pdrag3v85z]  a:hover, .top-row[b-pdrag3v85z]  .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row[b-pdrag3v85z]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row[b-pdrag3v85z] {
-        justify-content: space-between;
-    }
-
-    .top-row[b-pdrag3v85z]  a, .top-row[b-pdrag3v85z]  .btn-link {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 641px) {
-    .page[b-pdrag3v85z] {
-        flex-direction: column;
-    }
-
-    .top-row[b-pdrag3v85z] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth[b-pdrag3v85z]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row[b-pdrag3v85z], article[b-pdrag3v85z] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-
 #blazor-error-ui[b-pdrag3v85z] {
     background: lightyellow;
     bottom: 0;
@@ -86,3 +25,33 @@ main[b-pdrag3v85z] {
     }
 /* _content/gamespace/Components/Layout/NavMenu.razor.rz.scp.css */
 
+/* _content/gamespace/Components/Pages/Reel.razor.rz.scp.css */
+.reel-container[b-yovl9ts7d3] {
+    max-width: 640px;
+    max-height: 360px;
+}
+/* _content/gamespace/Components/Parts/GameCard.razor.rz.scp.css */
+.game-card[b-t3qipg2lkx] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height:fit-content;
+    gap: 8px;
+
+    border: 1px solid black;
+}
+
+.game-card-info[b-t3qipg2lkx] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-card-image[b-t3qipg2lkx] {
+    width: 264px;
+    height: 374px;
+}

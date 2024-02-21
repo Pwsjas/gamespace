@@ -1,0 +1,24 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height:fit-content;
+    gap: 8px;
+
+    border: 1px solid black;
+}
+
+.game-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-card-image {
+    width: 264px;
+    height: 374px;
+}

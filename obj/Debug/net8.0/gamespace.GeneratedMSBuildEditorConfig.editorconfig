@@ -53,3 +53,11 @@ build_metadata.AdditionalFiles.CssScope = b-pdrag3v85z
 [D:/workD/gamespace/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-kl78mwsty2
+
+[D:/workD/gamespace/Components/Pages/Reel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWVsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-yovl9ts7d3
+
+[D:/workD/gamespace/Components/Parts/GameCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHYW1lQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-t3qipg2lkx

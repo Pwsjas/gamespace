@@ -27,3 +27,6 @@ D:\workD\gamespace\obj\Debug\net8.0\refint\gamespace.dll
 D:\workD\gamespace\obj\Debug\net8.0\gamespace.pdb
 D:\workD\gamespace\obj\Debug\net8.0\gamespace.genruntimeconfig.cache
 D:\workD\gamespace\obj\Debug\net8.0\ref\gamespace.dll
+D:\workD\gamespace\obj\Debug\net8.0\gamespace.sourcelink.json
+D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Pages\Reel.razor.rz.scp.css
+D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\GameCard.razor.rz.scp.css

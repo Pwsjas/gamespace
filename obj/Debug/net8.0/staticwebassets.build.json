@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+57D+szWtgkeOZsyvwg7rDoQjb/M2qtp7awyYm/nZoY=",
+  "Hash": "R+DfcPZl0pUwF4IjYXNRL5GecMFPy5d0YngJ1zRQKFY=",
   "Source": "gamespace",
   "BasePath": "_content/gamespace",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\workD\\gamespace\\wwwroot\\images\\test.png",
+      "SourceId": "gamespace",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\workD\\gamespace\\wwwroot\\",
+      "BasePath": "_content/gamespace",
+      "RelativePath": "images/test.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\test.png"
     }
   ]
 }
