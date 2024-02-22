@@ -1,9 +1,9 @@
 <div class="game-card">
     <img src=@url class="game-card-image">
-    <p>@gameName</p>
+    <p class="game-card-name">@gameName</p>
     <section class="game-card-info">
         <p>@genre</p>
-        <p>@rating</p>
+        <p>@displayRating</p>
     </section>
 </div>
 
@@ -11,15 +11,17 @@
     [Parameter]
     public string gameName { get; set; } = "";
     [Parameter]
-    public string genre { get; set; } = "";
+    public string genre { get; set; } = "Genre";
     [Parameter]
     public double rating { get; set; } = 0;
     [Parameter]
     public string thumbnail { get; set; } = "";
-    public string url {get; set;} = "";
+    private string url = "";
+    private int displayRating = 0;
 
     protected override async Task OnInitializedAsync()
     {
         url = $"https://images.igdb.com/igdb/image/upload/t_cover_big/{@thumbnail}.jpg";
+        displayRating = (int)rating;
     }
 }

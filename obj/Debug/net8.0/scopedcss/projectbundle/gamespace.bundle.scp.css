@@ -6,7 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    gap: 16px;
+    gap: 8px;
 }
 /* _content/gamespace/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-pdrag3v85z] {
@@ -45,13 +45,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    width: fit-content;
-    height:fit-content;
+    width: 180px;
+    height: 360px;
     gap: 8px;
+    margin: 8px;
 
-    border: 1px solid black;
+    border: 1px solid transparent;
+    box-shadow: 0px 5px 8px rgb(0, 0, 0);
+}
+.game-card:hover[b-t3qipg2lkx] {
+    cursor: pointer;
+    transform:scale(1.02);
 }
 
 .game-card-info[b-t3qipg2lkx] {
@@ -59,9 +65,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    height: fit-content;
+    padding: 8px;
+    width: 100%;
 }
 
 .game-card-image[b-t3qipg2lkx] {
-    width: 264px;
-    height: 374px;
+    width: 180px;
+    height: 256px;
+}
+
+.game-card-name[b-t3qipg2lkx] {
+    text-align: center;
+}
+
+p[b-t3qipg2lkx] {
+    margin: 0;
 }
