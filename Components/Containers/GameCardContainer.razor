@@ -1,13 +1,13 @@
 @inject HttpClient httpClient
 
 <div class="game-card-container">
-    @if (games == null) {
+    @if (games.Count() < 1) {
         <p>Loading</p>
     }
     else {
-        <GameCard />
-        <GameCard />
-        <GameCard />
+        for (int i = 0; i < games.Count(); i++) {
+            <GameCard gameName=@games[i].Name thumbnail=@games[i].Cover.Image_Id rating=@games[i].Rating/>
+        }
     }
 </div>
 
@@ -23,7 +23,7 @@
     public class Cover
     {
         public int Id { get; set; } = 0;
-        public string Url { get; set; } = "";
+        public string Image_Id { get; set; } = "";
     }
 
     [Parameter]
@@ -39,6 +39,9 @@
         if (response.IsSuccessStatusCode)
         {
             games = await response.Content.ReadFromJsonAsync<List<Game>>();
+            for (int i = 0; i < games.Count(); i++) {
+                Console.WriteLine(games[i].Name);
+            }
         }
         else
         {
