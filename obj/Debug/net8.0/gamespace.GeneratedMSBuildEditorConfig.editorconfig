@@ -42,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/workD/gamespace/Components/Containers/BannerContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEJhbm5lckNvbnRhaW5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-xbu5998m0l
+
 [D:/workD/gamespace/Components/Containers/GameCardContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdhbWVDYXJkQ29udGFpbmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-e0wdd07vkt

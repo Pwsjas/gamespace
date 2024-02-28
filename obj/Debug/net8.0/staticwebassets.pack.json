@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
       "Id": "D:\\workD\\gamespace\\wwwroot\\images\\test.png",
       "PackagePath": "staticwebassets\\images\\test.png"
     },
