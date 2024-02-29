@@ -1,0 +1,21 @@
+.genres-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    margin: 16px;
+    width: 1080px;
+}
+
+.genres-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 300px;
+    margin-left: 32px;
+    margin-right: 32px;
+}

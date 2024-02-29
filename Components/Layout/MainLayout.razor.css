@@ -2,9 +2,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 96px;
+    margin-top: 64px;
 
-    background-color: white;
+    background-color: #181a1b;
 }
 
 #blazor-error-ui {

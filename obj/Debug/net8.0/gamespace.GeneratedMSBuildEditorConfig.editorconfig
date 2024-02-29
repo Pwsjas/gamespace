@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope = b-xbu5998m0l
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdhbWVDYXJkQ29udGFpbmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-e0wdd07vkt
 
+[D:/workD/gamespace/Components/Containers/GenresContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdlbnJlc0NvbnRhaW5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-j3p62ftx58
+
 [D:/workD/gamespace/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-pdrag3v85z
@@ -69,3 +73,7 @@ build_metadata.AdditionalFiles.CssScope = b-yovl9ts7d3
 [D:/workD/gamespace/Components/Parts/GameCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHYW1lQ2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-t3qipg2lkx
+
+[D:/workD/gamespace/Components/Parts/GenreCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHZW5yZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ayopgvqshu
