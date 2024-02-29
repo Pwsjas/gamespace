@@ -37,10 +37,15 @@
     width: 200px;
     height: 40px;
     padding: 16px;
-    background-color: black;
+    background-color: #121212;
     border-radius: 10px;
-    border: 2px solid #61daff;
+    border: 2px solid #fffc5a;
+    box-shadow: 0px 5px 10px #121212;
     color: white;
 
     cursor: pointer;
+}
+
+.banner-button:hover[b-xbu5998m0l] {
+    transform:scale(1.05);
 }

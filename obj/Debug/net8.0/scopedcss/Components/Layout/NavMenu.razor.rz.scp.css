@@ -11,7 +11,7 @@
     height: 64px;
     padding: 32px;
 
-    box-shadow: 0px 1px 10px #121212;
+    box-shadow: 0px 1px 4px #fffc5a;
     background-color:  #121212;
 
     z-index: 1;
@@ -34,17 +34,24 @@
     color: white;
 }
 
-.rad-10[b-kl78mwsty2] {
-    border-radius: 10px;
+.search-button[b-kl78mwsty2] {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
 }
 
-button[b-kl78mwsty2] {
-    background-color: rgb(32, 32, 32);
-    border: 2px solid #61daff;
+.login[b-kl78mwsty2] {
+    padding: 4px;
+    text-decoration: none;
+    background-color: #121212;
+    border-bottom: 2px solid #fffc5a;
     color: white;
 }
 
+a[b-kl78mwsty2] {
+    cursor: pointer;
+}
+
 input[b-kl78mwsty2] {
-    border: 2px solid #61daff;
     text-align: center;
 }

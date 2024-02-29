@@ -10,6 +10,7 @@
 .section-header {
     margin-top: 32px;
     text-align: center;
-    border-bottom: 2px solid black;
+    color: white;
+    border-bottom: 2px solid #fffc5a;
     padding-bottom: 8px;
 }

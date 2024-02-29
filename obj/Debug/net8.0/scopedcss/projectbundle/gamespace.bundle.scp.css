@@ -38,12 +38,17 @@
     width: 200px;
     height: 40px;
     padding: 16px;
-    background-color: black;
+    background-color: #121212;
     border-radius: 10px;
-    border: 2px solid #61daff;
+    border: 2px solid #fffc5a;
+    box-shadow: 0px 5px 10px #121212;
     color: white;
 
     cursor: pointer;
+}
+
+.banner-button:hover[b-xbu5998m0l] {
+    transform:scale(1.05);
 }
 /* _content/gamespace/Components/Containers/GameCardContainer.razor.rz.scp.css */
 .game-card-container[b-e0wdd07vkt] {
@@ -120,7 +125,7 @@
     height: 64px;
     padding: 32px;
 
-    box-shadow: 0px 1px 10px #121212;
+    box-shadow: 0px 1px 4px #fffc5a;
     background-color:  #121212;
 
     z-index: 1;
@@ -143,18 +148,25 @@
     color: white;
 }
 
-.rad-10[b-kl78mwsty2] {
-    border-radius: 10px;
+.search-button[b-kl78mwsty2] {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
 }
 
-button[b-kl78mwsty2] {
-    background-color: rgb(32, 32, 32);
-    border: 2px solid #61daff;
+.login[b-kl78mwsty2] {
+    padding: 4px;
+    text-decoration: none;
+    background-color: #121212;
+    border-bottom: 2px solid #fffc5a;
     color: white;
 }
 
+a[b-kl78mwsty2] {
+    cursor: pointer;
+}
+
 input[b-kl78mwsty2] {
-    border: 2px solid #61daff;
     text-align: center;
 }
 /* _content/gamespace/Components/Pages/Home.razor.rz.scp.css */
@@ -170,7 +182,8 @@ input[b-kl78mwsty2] {
 .section-header[b-383in698in] {
     margin-top: 32px;
     text-align: center;
-    border-bottom: 2px solid black;
+    color: white;
+    border-bottom: 2px solid #fffc5a;
     padding-bottom: 8px;
 }
 /* _content/gamespace/Components/Pages/Reel.razor.rz.scp.css */
