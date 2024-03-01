@@ -62,9 +62,9 @@ build_metadata.AdditionalFiles.CssScope = b-pdrag3v85z
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-kl78mwsty2
 
-[D:/workD/gamespace/Components/Pages/Game.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-f47zsylq92
+[D:/workD/gamespace/Components/Pages/GamePage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHYW1lUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-adxj62lrti
 
 [D:/workD/gamespace/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y

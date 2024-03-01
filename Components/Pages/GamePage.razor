@@ -1,8 +1,13 @@
 @page "/game/{id:int}"
-<PageTitle>Game</PageTitle>
+@inject HttpClient httpClient
+<PageTitle>GamePage</PageTitle>
 
 <section class="game-container">
-    <h3>@Id</h3>
+    @if(games != null && games.Count() > 0) {
+        <h1>@games[0].Name</h1>
+    } else {
+        <h1>Loading</h1>
+    }
 </section>
 
 @code {
@@ -11,14 +16,14 @@
 
     public class Game
     {
-        public int Id { get; set; } = 0;
+        public int Id { get; set; }
         public Cover Cover { get; set; }
-        public string Name { get; set; } = "";
-        public double Rating { get; set; } = 0;
         public List<Genre> Genres { get; set; }
+        public string Name { get; set; }
         public List<Platform> Platforms { get; set; }
-        public int[] Similar_Games { get; set; }
-        public string Summary { get; set; } = "";
+        public double Rating { get; set; }
+        public List<int> Similar_Games { get; set; }
+        public string Summary { get; set; }
         public List<Video> Videos { get; set; }
         public List<Website> Websites { get; set; }
     }
@@ -37,33 +42,30 @@
 
     public class Platform 
     {
-        public int Id { get; set; } = 0;
-        public string Name { get; set; } = "";
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
     public class Cover
     {
         public int Id { get; set; } = 0;
-        public string Image_Id { get; set; } = "";
+        public string Image_Id { get; set; }
     }
 
     public class Genre
     {
-    public int Id { get; set; }
-    public string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
-    private Game? game;
+    private List<Game>? games = new List<Game>();
 
     protected override async Task OnInitializedAsync()
     {
         var response = await httpClient.GetAsync($"http://localhost:5249/games/{Id}");
         if (response.IsSuccessStatusCode)
         {
-            game = await response.Content.ReadFromJsonAsync<Game>();
-            for (int i = 0; i < games.Count(); i++) {
-                Console.WriteLine(games[i].Name);
-            }
+            games = await response.Content.ReadFromJsonAsync<List<Game>>();
         }
         else
         {
