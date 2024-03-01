@@ -169,6 +169,14 @@ a[b-kl78mwsty2] {
 input[b-kl78mwsty2] {
     text-align: center;
 }
+/* _content/gamespace/Components/Pages/Game.razor.rz.scp.css */
+.game-container[b-f47zsylq92] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
 /* _content/gamespace/Components/Pages/Home.razor.rz.scp.css */
 .home-container[b-383in698in] {
     display: flex;
