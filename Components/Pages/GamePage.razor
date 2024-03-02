@@ -4,7 +4,8 @@
 
 <section class="game-container">
     @if(games != null && games.Count() > 0) {
-        <h1>@games[0].Name</h1>
+        <img class="game-banner" src="@bannerUrl"/>
+        <GameTitleCard coverId="@games[0].Cover.Image_Id" name="@games[0].Name" summary="@games[0].Summary"/>
     } else {
         <h1>Loading</h1>
     }
@@ -26,6 +27,20 @@
         public string Summary { get; set; }
         public List<Video> Videos { get; set; }
         public List<Website> Websites { get; set; }
+        public List<Artwork> Artworks { get; set; }
+        public List<Screenshot> Screenshots { get; set; }
+    }
+
+    public class Artwork
+    {
+        public int Id { get; set; }
+        public string Image_Id { get; set; }
+    }
+    
+    public class Screenshot
+    {
+        public int Id { get; set; }
+        public string Image_Id { get; set; }
     }
 
     public class Website
@@ -59,6 +74,7 @@
     }
 
     private List<Game>? games = new List<Game>();
+    public string bannerUrl = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -66,6 +82,7 @@
         if (response.IsSuccessStatusCode)
         {
             games = await response.Content.ReadFromJsonAsync<List<Game>>();
+            bannerUrl = $"https://images.igdb.com/igdb/image/upload/t_1080p/{@games[0].Artworks[0].Image_Id}.jpg";
         }
         else
         {

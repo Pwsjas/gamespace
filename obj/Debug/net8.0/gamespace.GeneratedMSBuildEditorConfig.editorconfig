@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope = b-yovl9ts7d3
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHYW1lQ2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-t3qipg2lkx
 
+[D:/workD/gamespace/Components/Parts/GameTitleCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHYW1lVGl0bGVDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-9auu50wvcs
+
 [D:/workD/gamespace/Components/Parts/GenreCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHZW5yZUNhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ayopgvqshu

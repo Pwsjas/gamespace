@@ -36,3 +36,4 @@ D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Containers\BannerContai
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Containers\GenresContainer.razor.rz.scp.css
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\GenreCard.razor.rz.scp.css
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Pages\GamePage.razor.rz.scp.css
+D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\GameTitleCard.razor.rz.scp.css

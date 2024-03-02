@@ -1,0 +1,25 @@
+<div class="game-title-card">
+    <img class="game-title-cover" src=@coverUrl/>
+    <section class="game-title-summary">
+        <h2>@name</h2>
+        <p>@summary</p>
+    </section>
+</div>
+
+@code {
+    [Parameter]
+    public string coverId { get; set; } = "";
+
+    [Parameter]
+    public string name { get; set; } = "";
+
+    [Parameter]
+    public string summary { get; set; } = "";
+
+    public string coverUrl { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        coverUrl = $"https://images.igdb.com/igdb/image/upload/t_cover_big/{@coverId}.jpg";
+    }
+}
