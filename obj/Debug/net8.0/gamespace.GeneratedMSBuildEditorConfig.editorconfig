@@ -54,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope = b-e0wdd07vkt
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdlbnJlc0NvbnRhaW5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-j3p62ftx58
 
+[D:/workD/gamespace/Components/Containers/ReelContainer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXFJlZWxDb250YWluZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-s349tgmjyz
+
 [D:/workD/gamespace/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-pdrag3v85z
@@ -69,10 +73,6 @@ build_metadata.AdditionalFiles.CssScope = b-adxj62lrti
 [D:/workD/gamespace/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-383in698in
-
-[D:/workD/gamespace/Components/Pages/Reel.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWVsLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-yovl9ts7d3
 
 [D:/workD/gamespace/Components/Parts/GameCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYXJ0c1xHYW1lQ2FyZC5yYXpvcg==

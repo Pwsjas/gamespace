@@ -1,0 +1,40 @@
+.reel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 320px;
+    gap: 32px;
+    padding: 32px;
+
+    background-color:  #121212;
+    overflow:hidden;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+}
+
+.reel-images {
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.left {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    padding: 16px;
+}
+
+.right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    padding: 16px;
+}

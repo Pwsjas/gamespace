@@ -1,0 +1,34 @@
+<div class="reel-container">
+    <p class="left">LEFT</p>
+    <p class="right">RIGHT</p>
+
+    @if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
+        for(int i = 0; i < Screenshots.Count(); i++) {
+            <img class="reel-images" src="@imagePaths[i]" height="240" width="400"/>    
+        }
+    } else {
+        <p>No content detected</p>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Video> Videos { get; set; }
+    [Parameter]
+    public List<Artwork> Artworks { get; set; }
+    [Parameter]
+    public List<Screenshot> Screenshots { get; set; }
+    [Parameter]
+    public string type { get; set; }
+
+    public List<string> imagePaths { get; set; } = new List<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
+            for(int i = 0; i < Screenshots.Count(); i++) {
+                imagePaths.Add($"https://images.igdb.com/igdb/image/upload/t_screenshot_med/{@Screenshots[i].Image_Id}.jpg");
+            }
+        }
+    }
+}

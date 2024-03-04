@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gamespace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af93a2a4f0e7ba713b8aac467d7c011c094d4bbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+954005f986e2d6b74b30e519e4dd721cb89b4594")]
 [assembly: System.Reflection.AssemblyProductAttribute("gamespace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gamespace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
