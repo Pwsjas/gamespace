@@ -18,6 +18,8 @@
 }
 
 .platforms {
+    justify-content: flex-start;
+
     max-width: 360px;
     flex-wrap: wrap;
 }

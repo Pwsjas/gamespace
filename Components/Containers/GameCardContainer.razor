@@ -2,38 +2,17 @@
 
 
 <div class="game-card-container">
-    @if (games.Count() < 1) {
-        <p>Loading</p>
-    }
-    else {
+    @if (games != null && games.Count() > 0) {
         for (int i = 0; i < games.Count(); i++) {
             <GameCard gameName=@games[i].Name thumbnail=@games[i].Cover.Image_Id rating=@games[i].Rating genre=@games[i].Genres.FirstOrDefault().Name/>
         }
     }
+    else {
+        <p>Loading</p>
+    }
 </div>
 
 @code {
-    public class Game
-    {
-        public int Id { get; set; } = 0;
-        public Cover Cover { get; set; }
-        public string Name { get; set; } = "";
-        public double Rating { get; set; } = 0;
-        public List<Genre> Genres { get; set; }
-    }
-
-    public class Cover
-    {
-        public int Id { get; set; } = 0;
-        public string Image_Id { get; set; } = "";
-    }
-
-    public class Genre
-{
-    public int Id { get; set; }
-    public string Name { get; set; }
-}
-
     [Parameter]
     public string Endpoint {get; set;} = "";
 
