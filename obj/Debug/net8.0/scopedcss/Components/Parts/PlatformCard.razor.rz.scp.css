@@ -1,4 +1,4 @@
-.genre-card[b-ayopgvqshu] {
+.platform-card[b-93ojr98v5o] {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,18 +18,21 @@
     box-shadow: 0px 5px 10px #121212;
 }
 
-.genre-card:hover[b-ayopgvqshu] {
+.platform-card:hover[b-93ojr98v5o] {
     transform:scale(1.05);
 }
+.yellow[b-93ojr98v5o] {
+    border: 2px solid #fffc5a;
+}
 
-.green[b-ayopgvqshu] {
+.green[b-93ojr98v5o] {
     border: 2px solid rgb(66, 156, 66);
 }
 
-.red[b-ayopgvqshu] {
+.red[b-93ojr98v5o] {
     border: 2px solid rgb(167, 35, 35);
 }
 
-.blue[b-ayopgvqshu] {
+.blue[b-93ojr98v5o] {
     border: 2px solid rgb(42, 51, 182);
 }

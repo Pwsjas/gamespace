@@ -1,0 +1,46 @@
+<div class="platforms-genres-container">
+    <section class="platforms">
+        @for(int i = 0; i < relevantPlatforms.Count(); i++) {
+            <PlatformCard platform="@relevantPlatforms[i].Name"/>
+        }
+    </section>
+
+    <section class="genres">
+        @for(int i = 0; i < usableGenres.Count(); i++){
+            <GenreCard genre="@usableGenres[i].Name" color="@colors[i]"/>
+        }
+    </section>
+</div>
+
+@code {
+    [Parameter]
+    public List<Platform> Platforms { get; set; }
+    [Parameter]
+    public List<Genre> Genres { get; set; }
+
+    public List<string> colors { get; set; } = new List<string>();
+    public List<Genre> usableGenres { get; set; } = new List<Genre>();
+    public List<Platform> relevantPlatforms { get; set; } = new List<Platform>();
+    
+    protected override async Task OnInitializedAsync()
+    {
+        for(int i = 0; i < Genres.Count(); i++) {
+            if(Genres[i].Name == "Shooter" || Genres[i].Name == "Fighting" || Genres[i].Name == "Sports" || Genres[i].Name == "Arcade") {
+                usableGenres.Add(Genres[i]);
+                colors.Add("red");
+            } else if(Genres[i].Name == "Adventure" || Genres[i].Name == "Platform" || Genres[i].Name == "Music" || Genres[i].Name == "Racing") {
+                usableGenres.Add(Genres[i]);
+                colors.Add("green");
+            } else if(Genres[i].Name == "Strategy" || Genres[i].Name == "Puzzle" || Genres[i].Name == "Simulator" || Genres[i].Name == "Role-playing (RPG)") {
+                usableGenres.Add(Genres[i]);
+                colors.Add("blue");
+            }
+        }
+
+        for(int i = 0; i < Platforms.Count(); i++) {
+            if (Platforms[i].Name == "PC (Microsoft Windows)" || Platforms[i].Name == "Xbox Series X|S" || Platforms[i].Name == "PlayStation 5" || Platforms[i].Name == "Nintendo Switch") {
+                relevantPlatforms.Add(Platforms[i]);
+            }
+        }
+    }
+}

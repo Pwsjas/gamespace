@@ -4,7 +4,7 @@
     align-items: center;
 
     width: 100%;
-    height: 320px;
+    height: 280px;
     gap: 32px;
     padding: 16px;
 
@@ -28,6 +28,7 @@ a {
 .reel-slider {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
     gap: 16px;
@@ -69,4 +70,8 @@ a {
     z-index: 1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.right:hover, .left:hover {
+    background-color: #181a1b;
 }

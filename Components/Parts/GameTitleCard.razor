@@ -3,18 +3,22 @@
     <section class="game-title-summary">
         <h2>@name</h2>
         <p>@summary</p>
+
+        <PlatformsAndGenres Genres="@Genres" Platforms="@Platforms"/>
     </section>
 </div>
 
 @code {
     [Parameter]
     public string coverId { get; set; } = "";
-
     [Parameter]
     public string name { get; set; } = "";
-
     [Parameter]
     public string summary { get; set; } = "";
+    [Parameter]
+    public List<Genre> Genres { get; set; } = new List<Genre>();
+    [Parameter]
+    public List<Platform> Platforms { get; set; } = new List<Platform>();
 
     public string coverUrl { get; set; } = "";
 

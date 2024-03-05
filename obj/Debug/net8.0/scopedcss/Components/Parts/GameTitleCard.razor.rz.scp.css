@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 16px;
     margin-top: -188px;
     gap: 32px;
@@ -24,8 +24,6 @@
     justify-content: space-between;
 
     min-height: 350px;
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 
 h2[b-9auu50wvcs] {
@@ -37,4 +35,5 @@ h2[b-9auu50wvcs] {
 p[b-9auu50wvcs] {
     color: white;
     margin: 0;
+    text-indent: 3rem;
 }

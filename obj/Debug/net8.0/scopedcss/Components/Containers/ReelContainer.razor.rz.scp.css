@@ -4,7 +4,7 @@
     align-items: center;
 
     width: 100%;
-    height: 320px;
+    height: 280px;
     gap: 32px;
     padding: 16px;
 
@@ -28,6 +28,7 @@ a[b-s349tgmjyz] {
 .reel-slider[b-s349tgmjyz] {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
     gap: 16px;
@@ -69,4 +70,8 @@ a[b-s349tgmjyz] {
     z-index: 1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.right:hover[b-s349tgmjyz], .left:hover[b-s349tgmjyz] {
+    background-color: #181a1b;
 }

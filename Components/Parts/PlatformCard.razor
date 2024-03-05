@@ -1,0 +1,16 @@
+@if(platform == "PC (Microsoft Windows)") {
+    <a class="platform-card yellow">PC</a>
+} else if (platform == "PlayStation 5") {
+    <a class="platform-card blue">Playstation 5</a>
+} else if (platform == "Nintendo Switch") {
+    <a class="platform-card red">Nintendo Switch</a>
+} else if (platform == "Xbox Series X|S") {
+    <a class="platform-card green">Xbox X|S</a>
+} else {
+    <a>Unknown</a>
+}
+
+@code {
+    [Parameter]
+    public string platform { get; set; } =  "";
+}

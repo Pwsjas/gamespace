@@ -1,0 +1,23 @@
+.platforms-genres-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 16px;
+}
+
+.genres, .platforms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.platforms {
+    max-width: 360px;
+    flex-wrap: wrap;
+}

@@ -1,13 +1,19 @@
 @page "/game/{id:int}"
 @inject HttpClient httpClient
-<PageTitle>GamePage</PageTitle>
+<PageTitle>@name</PageTitle>
 
 <section class="game-container">
     @if(games != null && games.Count() > 0) {
         <img class="game-banner" src="@bannerUrl"/>
-        <GameTitleCard coverId="@games[0].Cover.Image_Id" name="@games[0].Name" summary="@games[0].Summary"/>
+        <GameTitleCard coverId="@games[0].Cover.Image_Id" name="@games[0].Name" summary="@games[0].Summary" Genres="@games[0].Genres" Platforms="@games[0].Platforms"/>
+        
+        <h2>Screenshots</h2>
         <ReelContainer Screenshots="@games[0].Screenshots" type="screenshots"/>
+        
+        <h2>Artworks</h2>
         <ReelContainer Artworks="@games[0].Artworks" type="artworks"/>
+        
+        <h2>Related Videos</h2>
         <ReelContainer Videos="games[0].Videos" type="videos"/>
     } else {
         <h1>Loading</h1>
@@ -20,6 +26,7 @@
 
     private List<Game>? games = new List<Game>();
     public string bannerUrl = "";
+    public string name = "";
 
     protected override async Task OnInitializedAsync()
     {
@@ -28,6 +35,7 @@
         {
             games = await response.Content.ReadFromJsonAsync<List<Game>>();
             bannerUrl = $"https://images.igdb.com/igdb/image/upload/t_1080p/{@games[0].Artworks[0].Image_Id}.jpg";
+            name = games[0].Name;
         }
         else
         {

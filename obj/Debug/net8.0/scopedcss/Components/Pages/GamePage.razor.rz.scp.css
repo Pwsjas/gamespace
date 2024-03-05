@@ -11,3 +11,15 @@
     height: 340px;
     z-index: 0;
 }
+
+h2[b-adxj62lrti] {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    color: white;
+    padding-left: 16px;
+    margin: 0;
+    margin-top: 32px;
+}

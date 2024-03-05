@@ -90,7 +90,7 @@
     align-items: center;
 
     width: 100%;
-    height: 320px;
+    height: 280px;
     gap: 32px;
     padding: 16px;
 
@@ -114,6 +114,7 @@ a[b-s349tgmjyz] {
 .reel-slider[b-s349tgmjyz] {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 100%;
     gap: 16px;
@@ -155,6 +156,10 @@ a[b-s349tgmjyz] {
     z-index: 1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.right:hover[b-s349tgmjyz], .left:hover[b-s349tgmjyz] {
+    background-color: #181a1b;
 }
 /* _content/gamespace/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-pdrag3v85z] {
@@ -256,6 +261,18 @@ input[b-kl78mwsty2] {
     height: 340px;
     z-index: 0;
 }
+
+h2[b-adxj62lrti] {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    color: white;
+    padding-left: 16px;
+    margin: 0;
+    margin-top: 32px;
+}
 /* _content/gamespace/Components/Pages/Home.razor.rz.scp.css */
 .home-container[b-383in698in] {
     display: flex;
@@ -323,7 +340,7 @@ p[b-t3qipg2lkx] {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 16px;
     margin-top: -188px;
     gap: 32px;
@@ -345,8 +362,6 @@ p[b-t3qipg2lkx] {
     justify-content: space-between;
 
     min-height: 350px;
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 
 h2[b-9auu50wvcs] {
@@ -358,12 +373,14 @@ h2[b-9auu50wvcs] {
 p[b-9auu50wvcs] {
     color: white;
     margin: 0;
+    text-indent: 3rem;
 }
 /* _content/gamespace/Components/Parts/GenreCard.razor.rz.scp.css */
 .genre-card[b-ayopgvqshu] {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     text-decoration: none;
     cursor:pointer;
 
@@ -393,4 +410,67 @@ p[b-9auu50wvcs] {
 
 .blue[b-ayopgvqshu] {
     border: 2px solid rgb(42, 51, 182);
+}
+/* _content/gamespace/Components/Parts/PlatformCard.razor.rz.scp.css */
+.platform-card[b-93ojr98v5o] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+
+    padding: 16px;
+    margin: 4px;
+    border-radius: 10px;
+    width: 140px;
+    height: 80px;
+
+    color: white;
+    background-color: #121212;
+    border: 2px solid #121212;
+    box-shadow: 0px 5px 10px #121212;
+}
+
+.platform-card:hover[b-93ojr98v5o] {
+    transform:scale(1.05);
+}
+.yellow[b-93ojr98v5o] {
+    border: 2px solid #fffc5a;
+}
+
+.green[b-93ojr98v5o] {
+    border: 2px solid rgb(66, 156, 66);
+}
+
+.red[b-93ojr98v5o] {
+    border: 2px solid rgb(167, 35, 35);
+}
+
+.blue[b-93ojr98v5o] {
+    border: 2px solid rgb(42, 51, 182);
+}
+/* _content/gamespace/Components/Parts/PlatformsAndGenres.razor.rz.scp.css */
+.platforms-genres-container[b-now084d7s7] {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 16px;
+}
+
+.genres[b-now084d7s7], .platforms[b-now084d7s7] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.platforms[b-now084d7s7] {
+    max-width: 360px;
+    flex-wrap: wrap;
 }
