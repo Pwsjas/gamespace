@@ -14,12 +14,15 @@
     align-items: center;
     justify-content: center;
 
+    max-width: 360px;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
 .platforms {
     justify-content: flex-start;
+}
 
-    max-width: 360px;
-    flex-wrap: wrap;
+.genres {
+    justify-content: flex-end;
 }

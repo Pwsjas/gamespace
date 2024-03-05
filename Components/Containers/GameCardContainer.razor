@@ -4,7 +4,7 @@
 <div class="game-card-container">
     @if (games != null && games.Count() > 0) {
         for (int i = 0; i < games.Count(); i++) {
-            <GameCard gameName=@games[i].Name thumbnail=@games[i].Cover.Image_Id rating=@games[i].Rating genre=@games[i].Genres.FirstOrDefault().Name/>
+            <GameCard id="@games[i].Id" gameName=@games[i].Name thumbnail=@games[i].Cover.Image_Id rating=@games[i].Rating genre=@games[i].Genres.FirstOrDefault().Name/>
         }
     }
     else {

@@ -1,11 +1,13 @@
-<div class="game-card">
-    <img src=@url class="game-card-image">
-    <p class="game-card-name">@gameName</p>
-    <section class="game-card-info">
-        <p>@genre</p>
-        <p>@displayRating</p>
-    </section>
-</div>
+<NavLink href="@($"/game/{id}")">
+    <div class="game-card">
+        <img src=@url class="game-card-image">
+        <p class="game-card-name">@gameName</p>
+        <section class="game-card-info">
+            <p>@genre</p>
+            <p>@displayRating</p>
+        </section>
+    </div>
+</NavLink>
 
 @code {
     [Parameter]
@@ -16,6 +18,9 @@
     public double rating { get; set; } = 0;
     [Parameter]
     public string thumbnail { get; set; } = "";
+    [Parameter]
+    public int id { get; set; } = 0;
+    
     private string url = "";
     private int displayRating = 0;
 
