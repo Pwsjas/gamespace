@@ -7,6 +7,8 @@
         <img class="game-banner" src="@bannerUrl"/>
         <GameTitleCard coverId="@games[0].Cover.Image_Id" name="@games[0].Name" summary="@games[0].Summary"/>
         <ReelContainer Screenshots="@games[0].Screenshots" type="screenshots"/>
+        <ReelContainer Artworks="@games[0].Artworks" type="artworks"/>
+        <ReelContainer Videos="games[0].Videos" type="videos"/>
     } else {
         <h1>Loading</h1>
     }

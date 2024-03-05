@@ -6,19 +6,45 @@
     width: 100%;
     height: 320px;
     gap: 32px;
-    padding: 32px;
+    padding: 16px;
 
     background-color:  #121212;
     overflow:hidden;
 }
 
-p {
+a {
     color: white;
     font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #121212;
 }
 
 .reel-images {
     box-shadow: 0px 5px 10px #000000;
+    cursor: pointer;
+}
+
+.reel-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+.middle {
+    transform: translateX(0px);
+}
+
+.right-1 {
+    transform: translateX(-832px);
+}
+
+.right-2 {
+    transform: translateX(-1664px);
 }
 
 .left {
@@ -28,6 +54,9 @@ p {
     justify-content: center;
     left: 0;
     padding: 16px;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .right {
@@ -37,4 +66,7 @@ p {
     justify-content: center;
     right: 0;
     padding: 16px;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }

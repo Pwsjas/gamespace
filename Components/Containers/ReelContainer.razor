@@ -1,14 +1,29 @@
-<div class="reel-container">
-    <p class="left">LEFT</p>
-    <p class="right">RIGHT</p>
+@rendermode InteractiveServer
 
-    @if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
-        for(int i = 0; i < Screenshots.Count(); i++) {
-            <img class="reel-images" src="@imagePaths[i]" height="240" width="400"/>    
+<div class="reel-container">
+    <a class="left" @onclick="MoveLeft">&lt;</a>
+    <a class="right" @onclick="MoveRight">	&gt;</a>
+
+    <section class="@reelClass">
+        @if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
+            for(int i = 0; i < count; i++) {
+                <img class="reel-images" src="@imagePaths[i]" height="240" width="400"/>    
+            }
+        } else if(@type == "artworks" && Artworks != null && Artworks.Count() > 0){
+            for(int i = 0; i < count; i++) {
+                <img class="reel-images" src="@imagePaths[i]" height="240" width="400"/>    
+            }
+        } else  if(@type == "videos" && Videos != null && Videos.Count() > 0) {
+            for (int i = 0; i < count; i++) {
+                <iframe width="400" height="240"
+                    src="@imagePaths[i]">
+                </iframe>
+            }
+        } else {
+            <p>No content detected</p>
         }
-    } else {
-        <p>No content detected</p>
-    }
+    </section>
+
 </div>
 
 @code {
@@ -22,13 +37,51 @@
     public string type { get; set; }
 
     public List<string> imagePaths { get; set; } = new List<string>();
+    public int position { get; set; } = 0;
+    public string reelClass { get; set; } = "reel-slider middle";
+    public int count { get; set; } = 8;
 
     protected override async Task OnInitializedAsync()
     {
         if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
             for(int i = 0; i < Screenshots.Count(); i++) {
                 imagePaths.Add($"https://images.igdb.com/igdb/image/upload/t_screenshot_med/{@Screenshots[i].Image_Id}.jpg");
+                if(Screenshots.Count() < 8) {
+                    count = Screenshots.Count();
+                }
             }
         }
+        if(@type == "artworks" && Artworks != null && Artworks.Count() > 0) {
+            for(int i = 0; i < Artworks.Count(); i++) {
+                imagePaths.Add($"https://images.igdb.com/igdb/image/upload/t_screenshot_med/{@Artworks[i].Image_Id}.jpg");
+                if(Artworks.Count() < 8) {
+                    count = Artworks.Count();
+                }
+            }
+        }
+        if(@type == "videos" && Videos != null && Videos.Count() > 0) {
+            for(int i = 0; i < Videos.Count(); i++) {
+                imagePaths.Add($"https://www.youtube.com/embed/{Videos[i].Video_Id}");
+                if(Videos.Count() < 8) {
+                    count = Videos.Count();
+                }
+            }
+        }
+    }
+
+    private void MoveRight() {
+        if(reelClass == "reel-slider middle") {
+            reelClass = $"reel-slider right-1";
+        } else if (reelClass == "reel-slider right-1") {
+            reelClass = $"reel-slider right-2";
+        };
+    }
+
+    private void MoveLeft() {
+        if(reelClass == "reel-slider right-1") {
+            reelClass = $"reel-slider middle";
+        } else if (reelClass == "reel-slider right-2") {
+            reelClass = $"reel-slider right-1";
+        };
     }
 }
