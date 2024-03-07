@@ -16,6 +16,11 @@
             <ReelContainer Screenshots="@games[0].Screenshots" type="screenshots"/>
         }
 
+        if(@games[0].Similar_Games != null && @games[0].Similar_Games.Count() > 0) {
+            <h2>Similar Games</h2>
+            <GameCardContainer Endpoint="similargames" IDList="@games[0].Similar_Games"/>
+        }
+
         if(@games[0].Artworks != null && @games[0].Artworks.Count() > 4) {
             <h2>Artworks</h2>
             <ReelContainer Artworks="@games[0].Artworks" type="artworks"/>
@@ -24,10 +29,6 @@
         if(@games[0].Videos != null && @games[0].Videos.Count() > 0) {
             <h2>Related Videos</h2>
             <ReelContainer Videos="games[0].Videos" type="videos"/>
-        }
-
-        if(@games[0].Similar_Games != null && @games[0].Similar_Games.Count() > 0) {
-            <GameCardContainer Endpoint="similargames" IDList="@games[0].Similar_Games"/>
         }
     } else {
         <h1>Loading</h1>

@@ -254,6 +254,7 @@ input[b-kl78mwsty2] {
     align-items: center;
 
     width: 100%;
+    gap: 32px;
 }
 
 .game-banner[b-adxj62lrti] {
@@ -266,13 +267,13 @@ input[b-kl78mwsty2] {
 h2[b-adxj62lrti] {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding-left: 16px;
     margin: 0;
-    margin-top: 32px;
+    margin-bottom: -16px;
+    text-align: center;
+    border-bottom: 2px solid #fffc5a;
 }
 /* _content/gamespace/Components/Pages/Home.razor.rz.scp.css */
 .home-container[b-383in698in] {
