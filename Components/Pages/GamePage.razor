@@ -25,6 +25,10 @@
             <h2>Related Videos</h2>
             <ReelContainer Videos="games[0].Videos" type="videos"/>
         }
+
+        if(@games[0].Similar_Games != null && @games[0].Similar_Games.Count() > 0) {
+            <GameCardContainer Endpoint="similargames" IDList="@games[0].Similar_Games"/>
+        }
     } else {
         <h1>Loading</h1>
     }
@@ -48,6 +52,7 @@
                 bannerUrl = $"https://images.igdb.com/igdb/image/upload/t_1080p/{@games[0].Artworks[0].Image_Id}.jpg";
             }
             name = games[0].Name;
+            Console.WriteLine(@games[0].Similar_Games);
         }
         else
         {
