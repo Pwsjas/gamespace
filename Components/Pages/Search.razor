@@ -1,0 +1,21 @@
+@page "/search"
+@inject HttpClient httpClient
+<PageTitle>Search</PageTitle>
+
+<section class="search-container">
+
+</section>
+
+@code {
+    [Parameter]
+    public string genre { get; set; } = "";
+    [Parameter]
+    public string platform { get; set; } = "";
+    [Parameter]
+    public string searchString { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+}

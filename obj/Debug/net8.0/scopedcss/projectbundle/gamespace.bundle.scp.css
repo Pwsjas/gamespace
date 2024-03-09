@@ -161,6 +161,44 @@ a[b-s349tgmjyz] {
 .right:hover[b-s349tgmjyz], .left:hover[b-s349tgmjyz] {
     background-color: #181a1b;
 }
+/* _content/gamespace/Components/Layout/Footer.razor.rz.scp.css */
+.main-footer[b-d2aph8k6cx] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 64px;
+    width: 100%;
+    padding: 32px;
+    margin-top: 32px;
+
+    background-color: #121212;
+}
+
+p[b-d2aph8k6cx] {
+    color: white;
+    margin: 0;
+}
+
+.footer-content[b-d2aph8k6cx] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap:8px;
+    width: 200px;
+}
+
+.socials[b-d2aph8k6cx] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+}
 /* _content/gamespace/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-pdrag3v85z] {
     position: relative;
@@ -203,7 +241,7 @@ a[b-s349tgmjyz] {
     height: 64px;
     padding: 32px;
 
-    box-shadow: 0px 1px 4px #fffc5a;
+    box-shadow: 0px 1px 4px #121212;
     background-color:  #121212;
 
     z-index: 5;
@@ -236,7 +274,6 @@ a[b-s349tgmjyz] {
     padding: 4px;
     text-decoration: none;
     background-color: #121212;
-    border-bottom: 2px solid #fffc5a;
     color: white;
 }
 
@@ -293,6 +330,7 @@ h2[b-adxj62lrti] {
     border-bottom: 2px solid #fffc5a;
     padding-bottom: 8px;
 }
+/* _content/gamespace/Components/Pages/Search.razor.rz.scp.css */
 /* _content/gamespace/Components/Parts/GameCard.razor.rz.scp.css */
 .game-card[b-t3qipg2lkx] {
     display: flex;

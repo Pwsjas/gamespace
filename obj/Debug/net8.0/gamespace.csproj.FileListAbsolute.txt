@@ -39,3 +39,5 @@ D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\GameTitleCard.raz
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Containers\ReelContainer.razor.rz.scp.css
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\PlatformsAndGenres.razor.rz.scp.css
 D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Parts\PlatformCard.razor.rz.scp.css
+D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Layout\Footer.razor.rz.scp.css
+D:\workD\gamespace\obj\Debug\net8.0\scopedcss\Components\Pages\Search.razor.rz.scp.css

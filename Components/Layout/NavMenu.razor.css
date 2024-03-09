@@ -11,7 +11,7 @@
     height: 64px;
     padding: 32px;
 
-    box-shadow: 0px 1px 4px #fffc5a;
+    box-shadow: 0px 1px 4px #121212;
     background-color:  #121212;
 
     z-index: 5;
@@ -44,7 +44,6 @@
     padding: 4px;
     text-decoration: none;
     background-color: #121212;
-    border-bottom: 2px solid #fffc5a;
     color: white;
 }
 
