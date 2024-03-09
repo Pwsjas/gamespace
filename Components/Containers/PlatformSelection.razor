@@ -1,0 +1,50 @@
+@rendermode InteractiveServer
+
+<div class="platform-selection">
+    <a class="@classes[0]" @onclick="() => TogglePlatform(0)">@platforms[0]</a>
+    <a class="@classes[1]" @onclick="() => TogglePlatform(1)">@platforms[1]</a>
+    <a class="@classes[2]" @onclick="() => TogglePlatform(2)">@platforms[2]</a>
+    <a class="@classes[3]" @onclick="() => TogglePlatform(3)">@platforms[3]</a>
+</div>
+
+@code {
+    private List<string> selected = new List<string>();
+
+    // EventCallback to request the list
+    [Parameter]
+    public EventCallback<List<string>> RequestSelected { get; set; }
+
+    public List<String> ReturnSelectedList()
+    {
+        return selected;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    private void TogglePlatform(int ID) {
+        if(classes[ID] == "platform-selector") {
+            selected.Add(platforms[ID]);
+            classes[ID] = "platform-selector selected";
+        } else {
+            selected.Remove(platforms[ID]);
+            classes[ID] = "platform-selector";
+        }
+    }
+
+    private List<string> platforms = new List<string> {
+        "PC",
+        "Nintendo Switch",
+        "Playstation 5",
+        "XBOX Series X|S"
+    };
+
+    private List<string> classes = new List<string> {
+        "platform-selector",
+        "platform-selector",
+        "platform-selector",
+        "platform-selector"
+    };
+}

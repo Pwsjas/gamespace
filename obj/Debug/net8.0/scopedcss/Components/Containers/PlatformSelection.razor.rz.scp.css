@@ -1,0 +1,40 @@
+.platform-selection[b-71nub47kgc] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    max-width: 1080px;
+    padding: 8px;
+}
+
+.platform-selector[b-71nub47kgc] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    
+    width: 140px;
+    height: 40px;
+    padding: 8px;
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+
+    cursor:pointer;
+}
+
+.platform-selector:hover[b-71nub47kgc] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}
+
+.selected[b-71nub47kgc] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}

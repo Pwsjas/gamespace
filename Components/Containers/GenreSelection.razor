@@ -1,0 +1,74 @@
+@rendermode InteractiveServer
+
+<div class="genre-selection">
+    <a class="@classes[0]" @onclick="() => ToggleGenre(0)">@genres[0]</a>
+    <a class="@classes[1]" @onclick="() => ToggleGenre(1)">@genres[1]</a>
+    <a class="@classes[2]" @onclick="() => ToggleGenre(2)">@genres[2]</a>
+    <a class="@classes[3]" @onclick="() => ToggleGenre(3)">@genres[3]</a>
+    <a class="@classes[4]" @onclick="() => ToggleGenre(4)">@genres[4]</a>
+    <a class="@classes[5]" @onclick="() => ToggleGenre(5)">@genres[5]</a>
+    <a class="@classes[6]" @onclick="() => ToggleGenre(6)">@genres[6]</a>
+    <a class="@classes[7]" @onclick="() => ToggleGenre(7)">@genres[7]</a>
+    <a class="@classes[8]" @onclick="() => ToggleGenre(8)">@genres[8]</a>
+    <a class="@classes[9]" @onclick="() => ToggleGenre(9)">@genres[9]</a>
+    <a class="@classes[10]" @onclick="() => ToggleGenre(10)">@genres[10]</a>
+    <a class="@classes[11]" @onclick="() => ToggleGenre(11)">@genres[11]</a>
+</div>
+
+@code {
+    private List<string> selected = new List<string>();
+
+    // EventCallback to request the list
+    [Parameter]
+    public EventCallback<List<string>> RequestSelected { get; set; }
+
+    public List<String> ReturnSelectedList()
+    {
+        return selected;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    private void ToggleGenre(int ID) {
+        if(classes[ID] == "genre-selector") {
+            selected.Add(genres[ID]);
+            classes[ID] = "genre-selector selected";
+        } else {
+            selected.Remove(genres[ID]);
+            classes[ID] = "genre-selector";
+        }
+    }
+
+    private List<string> genres = new List<string> {
+        "Shooter",
+        "Fighting",
+        "Sports",
+        "Arcade",
+        "Adventure",
+        "Platformer",
+        "Music",
+        "Racing",
+        "RPG",
+        "Strategy",
+        "Puzzle",
+        "Simulator"
+    };
+
+    private List<string> classes = new List<string> {
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector",
+        "genre-selector"
+    };
+}

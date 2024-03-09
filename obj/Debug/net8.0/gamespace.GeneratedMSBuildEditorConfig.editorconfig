@@ -54,6 +54,14 @@ build_metadata.AdditionalFiles.CssScope = b-e0wdd07vkt
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdlbnJlc0NvbnRhaW5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-j3p62ftx58
 
+[D:/workD/gamespace/Components/Containers/GenreSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXEdlbnJlU2VsZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-tn3ymew7ud
+
+[D:/workD/gamespace/Components/Containers/PlatformSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXFBsYXRmb3JtU2VsZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-71nub47kgc
+
 [D:/workD/gamespace/Components/Containers/ReelContainer.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250YWluZXJzXFJlZWxDb250YWluZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-s349tgmjyz

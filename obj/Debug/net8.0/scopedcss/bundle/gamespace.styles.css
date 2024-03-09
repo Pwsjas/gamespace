@@ -83,6 +83,88 @@
     margin-left: 32px;
     margin-right: 32px;
 }
+/* _content/gamespace/Components/Containers/GenreSelection.razor.rz.scp.css */
+.genre-selection[b-tn3ymew7ud] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    max-width: 1080px;
+    padding: 8px;
+}
+
+.genre-selector[b-tn3ymew7ud] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    
+    width: 140px;
+    height: 40px;
+    padding: 8px;
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+
+    cursor:pointer;
+}
+
+.genre-selector:hover[b-tn3ymew7ud] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}
+
+.selected[b-tn3ymew7ud] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}
+/* _content/gamespace/Components/Containers/PlatformSelection.razor.rz.scp.css */
+.platform-selection[b-71nub47kgc] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    max-width: 1080px;
+    padding: 8px;
+}
+
+.platform-selector[b-71nub47kgc] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    
+    width: 140px;
+    height: 40px;
+    padding: 8px;
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+
+    cursor:pointer;
+}
+
+.platform-selector:hover[b-71nub47kgc] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}
+
+.selected[b-71nub47kgc] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    border-color: #fffc5a;
+}
 /* _content/gamespace/Components/Containers/ReelContainer.razor.rz.scp.css */
 .reel-container[b-s349tgmjyz] {
     display: flex;
@@ -331,6 +413,16 @@ h2[b-adxj62lrti] {
     padding-bottom: 8px;
 }
 /* _content/gamespace/Components/Pages/Search.razor.rz.scp.css */
+.search-container[b-ari3gx8inx] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 32px;
+    width: 100%;
+    margin-top: 32px;
+}
 /* _content/gamespace/Components/Parts/GameCard.razor.rz.scp.css */
 .game-card[b-t3qipg2lkx] {
     display: flex;
