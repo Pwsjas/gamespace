@@ -4,10 +4,10 @@
 <PageTitle>Search</PageTitle>
 
 <section class="search-container">
-    <input class="search-input" type="text" id="fname" name="fname">
     <GenreSelection @ref="genreSelectionRef"/>
     <PlatformSelection @ref="platformSelectionRef"/>
-    <button @onclick=RequestGenreSelections>Search</button>
+    <input @bind="inputValue" class="search-input" type="text" id="fname" name="fname" placeholder="Title">
+    <button @onclick=SearchGames>Search</button>
 </section>
 
 @code {
@@ -19,17 +19,37 @@
     public string searchString { get; set; } = "";
     private List<string> selectionGenres { get; set; } = new List<string>();
     private List<string> selectionPlatforms { get; set; } = new List<string>();
+    public string inputValue { get; set; } = "";
 
     private GenreSelection genreSelectionRef;
     private async Task RequestGenreSelections() {
         selectionGenres = genreSelectionRef.ReturnSelectedList();
-        Console.WriteLine(selectionGenres[0]);
     }
 
     private PlatformSelection platformSelectionRef;
     private async Task RequestPlatformSelections() {
         selectionPlatforms = platformSelectionRef.ReturnSelectedList();
-        Console.WriteLine(selectionPlatforms[0]);
+    }
+
+    public class SearchRequest {
+        public List<string> genres { get; set; } = new List<string>();
+        public List<string> platforms { get; set; } = new List<string>();
+        public string search { get; set; } = "";
+    }
+
+    private async Task SearchGames() {
+        RequestGenreSelections();
+        RequestPlatformSelections();
+
+        var JSONRequest = new SearchRequest {
+            genres = selectionGenres,
+            platforms = selectionPlatforms,
+            search = inputValue
+        };
+
+        Console.WriteLine(string.Join(",", JSONRequest.genres));
+        Console.WriteLine(string.Join(",", JSONRequest.platforms));
+        Console.WriteLine(JSONRequest.search);
     }
 
     protected override async Task OnInitializedAsync()

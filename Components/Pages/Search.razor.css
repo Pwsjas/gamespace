@@ -4,7 +4,23 @@
     align-items: center;
     justify-content: center;
 
-    gap: 32px;
+    gap: 16px;
     width: 100%;
     margin-top: 32px;
+}
+
+input {
+    text-align: center;
+    box-shadow: 0px 5px 10px #121212;
+}
+
+button {
+    border-radius: 10px;
+    border: 2px solid black;
+
+    width: 120px;
+    height: 60px;
+
+    font-size: 1.5rem;
+    box-shadow: 0px 5px 10px #121212;
 }
