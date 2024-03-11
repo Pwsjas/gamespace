@@ -8,6 +8,10 @@
     <PlatformSelection @ref="platformSelectionRef"/>
     <input @bind="inputValue" class="search-input" type="text" id="fname" name="fname" placeholder="Title">
     <button @onclick=SearchGames>Search</button>
+
+    @if(searched == true) {
+        <GameCardContainer SearchedGames="games"/>
+    }
 </section>
 
 @code {
@@ -20,6 +24,8 @@
     private List<string> selectionGenres { get; set; } = new List<string>();
     private List<string> selectionPlatforms { get; set; } = new List<string>();
     public string inputValue { get; set; } = "";
+    public bool searched = false;
+    public List<Game> games = new List<Game>();
 
     private GenreSelection genreSelectionRef;
     private async Task RequestGenreSelections() {
@@ -31,25 +37,31 @@
         selectionPlatforms = platformSelectionRef.ReturnSelectedList();
     }
 
-    public class SearchRequest {
-        public List<string> genres { get; set; } = new List<string>();
-        public List<string> platforms { get; set; } = new List<string>();
-        public string search { get; set; } = "";
-    }
-
     private async Task SearchGames() {
+        searched = false;
         RequestGenreSelections();
         RequestPlatformSelections();
 
-        var JSONRequest = new SearchRequest {
-            genres = selectionGenres,
-            platforms = selectionPlatforms,
-            search = inputValue
+        var requestObject = new SearchRequest {
+            Genres = selectionGenres,
+            Platforms = selectionPlatforms,
+            Search = inputValue
         };
 
-        Console.WriteLine(string.Join(",", JSONRequest.genres));
-        Console.WriteLine(string.Join(",", JSONRequest.platforms));
-        Console.WriteLine(JSONRequest.search);
+        var jsonRequest = JsonSerializer.Serialize(requestObject);
+        var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+
+        var response = await httpClient.PostAsync($"http://localhost:5249/search", content);
+
+        if (response.IsSuccessStatusCode)
+        {
+            games = await response.Content.ReadFromJsonAsync<List<Game>>();
+            searched = true;
+        }
+        else
+        {
+            // Handle error
+        }
     }
 
     protected override async Task OnInitializedAsync()

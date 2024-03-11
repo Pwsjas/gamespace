@@ -20,6 +20,8 @@
     public string Endpoint {get; set;} = "";
     [Parameter]
     public List<int> IDList {get; set;} = new List<int>();
+    [Parameter]
+    public List<Game> SearchedGames { get; set; } = new List<Game>();
 
     //call backend for gamedata
     private List<Game>? games = new List<Game>();
@@ -50,6 +52,8 @@
             {
                 // Handle error
             }
+        } else if(SearchedGames != null && SearchedGames.Count() > 0) {
+            games = SearchedGames;
         } else {
             //GET endpoints
             var response = await httpClient.GetAsync($"http://localhost:5249/{Endpoint}");

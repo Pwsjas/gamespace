@@ -26,7 +26,11 @@
 
     private void TogglePlatform(int ID) {
         if(classes[ID] == "platform-selector") {
-            selected.Add(platforms[ID]);
+            if(platforms[ID] == "PC") {
+                selected.Add("PC (Microsoft Windows)");
+            } else {
+                selected.Add(platforms[ID]);
+            }
             classes[ID] = "platform-selector selected";
         } else {
             selected.Remove(platforms[ID]);
@@ -37,8 +41,8 @@
     private List<string> platforms = new List<string> {
         "PC",
         "Nintendo Switch",
-        "Playstation 5",
-        "XBOX Series X|S"
+        "PlayStation 5",
+        "Xbox Series X|S"
     };
 
     private List<string> classes = new List<string> {

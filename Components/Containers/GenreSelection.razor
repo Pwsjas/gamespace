@@ -34,7 +34,15 @@
 
     private void ToggleGenre(int ID) {
         if(classes[ID] == "genre-selector") {
-            selected.Add(genres[ID]);
+            if(genres[ID] == "RPG" || genres[ID] == "Platformer") {
+                if(genres[ID] == "RPG") {
+                    selected.Add("Role-playing (RPG)");
+                } else {
+                    selected.Add("Platform");
+                }
+            } else {
+                selected.Add(genres[ID]);
+            }
             classes[ID] = "genre-selector selected";
         } else {
             selected.Remove(genres[ID]);
