@@ -1,4 +1,6 @@
 .main-footer[b-d2aph8k6cx] {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,7 +9,6 @@
     gap: 64px;
     width: 100%;
     padding: 32px;
-    margin-top: 32px;
 
     background-color: #121212;
 }

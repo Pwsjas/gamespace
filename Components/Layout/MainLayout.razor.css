@@ -2,7 +2,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 128px;
+    min-height: 100vh;
 
     background-color: #181a1b;
 }
