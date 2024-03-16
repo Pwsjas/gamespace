@@ -636,3 +636,41 @@ p[b-9auu50wvcs] {
 .genres[b-now084d7s7] {
     justify-content: flex-end;
 }
+/* _content/gamespace/Components/Parts/Websites.razor.rz.scp.css */
+.websites-container[b-r6vf0kcekt] {
+    display: flex;
+    flex-direction: column;
+}
+
+.websites-games[b-r6vf0kcekt] {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 8px;
+}
+
+.websites-media[b-r6vf0kcekt] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.website-panel[b-r6vf0kcekt] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.website-panel:hover[b-r6vf0kcekt] {
+    transform:scale(1.05);
+}

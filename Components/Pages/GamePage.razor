@@ -10,7 +10,10 @@
             <div class="game-banner"></div>
         }
         <GameTitleCard coverId="@games[0].Cover.Image_Id" name="@games[0].Name" summary="@games[0].Summary" Genres="@games[0].Genres" Platforms="@games[0].Platforms"/>
-        
+        if(@games[0].Websites != null && @games[0].Websites.Count() > 0) {
+            <Websites websites="@games[0].Websites"/>
+        }
+
         if(@games[0].Screenshots != null && @games[0].Screenshots.Count() > 0) {
             <h2>Screenshots</h2>
             <ReelContainer Screenshots="@games[0].Screenshots" type="screenshots"/>

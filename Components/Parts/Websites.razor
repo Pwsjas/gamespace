@@ -1,0 +1,72 @@
+<div class="websites-container">
+    @if(gameWebsites != null && gameWebsites.Count() > 0) {
+        <section class="websites-games">
+            @for(int i = 0; i < gameWebsites.Count(); i++) {
+                if(IsGameSite(gameWebsites[i])  == true) {
+                    <a class="website-panel">@gameWebsites[i]</a>
+                }
+            }
+        </section>
+
+        <section class="websites-media">
+            @for(int i = 0; i < gameWebsites.Count(); i++) {
+                if(IsGameSite(gameWebsites[i]) == false) {
+                    <a class="website-panel">@gameWebsites[i]</a>
+                }
+            }
+        </section>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Website> websites { get; set; } = new List<Website>();
+
+    public List<string> gameWebsites = new List<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(websites != null && websites.Count() > 0) {
+            for(int i = 0; i < websites.Count(); i++) {
+                var site = SiteString(websites[i].Url);
+                if(site != "") {
+                    gameWebsites.Add(site);
+                }
+            }
+        }
+    }
+
+    public string SiteString(string url) {
+        if (url.Contains("https://store.steampowered.com")) {
+            return "steam";
+        } else if (url.Contains("https://www.epicgames.com")) {
+            return "epicgames";
+        } else if (url.Contains("https://www.gog.com")) {
+            return "gog";
+        } else if (url.Contains("https://www.youtube.com")) {
+            return "youtube";
+        } else if (url.Contains("https://en.wikipedia.org")) {
+            return "wikipedia"; 
+        } else if (url.Contains("https://www.reddit.com")) {
+            return "reddit";
+        } else if (url.Contains("https://discord.gg/discord.gg")) {
+            return "discord";
+        } else if (url.Contains("https://www.twitch.tv")) {
+            return "twitch";
+        } else if (url.Contains("https://www.instagram.com")) {
+            return "instagram";
+        } else if (url.Contains("https://twitter.com")) {
+            return "twitter";
+        } else if (url.Contains("https://www.facebook.com")) {
+            return "facebook";
+        }
+        return "";
+    }
+
+    public bool IsGameSite(string site) {
+        if (site == "steam" || site == "epicgames" || site == "gog") {
+            return true;
+        }
+        return false;
+    }
+}
