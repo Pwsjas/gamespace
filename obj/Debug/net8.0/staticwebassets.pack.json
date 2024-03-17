@@ -33,12 +33,20 @@
       "PackagePath": "staticwebassets\\icons\\facebook.svg"
     },
     {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\github.svg",
+      "PackagePath": "staticwebassets\\icons\\github.svg"
+    },
+    {
       "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\gog.svg",
       "PackagePath": "staticwebassets\\icons\\gog.svg"
     },
     {
       "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\instagram.svg",
       "PackagePath": "staticwebassets\\icons\\instagram.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\mail.svg",
+      "PackagePath": "staticwebassets\\icons\\mail.svg"
     },
     {
       "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\reddit.svg",

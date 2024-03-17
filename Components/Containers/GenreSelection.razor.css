@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 
     gap: 8px;
-    max-width: 1080px;
+    max-width: 1000px;
     padding: 8px;
 }
 
@@ -21,6 +21,7 @@
     height: 40px;
     padding: 8px;
     
+    background-color: #181a1b;
     border: 2px solid white;
     border-radius: 10px;
     color: white;
@@ -30,13 +31,13 @@
 }
 
 .genre-selector:hover {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }
 
 .selected {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }

@@ -19,9 +19,9 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #181a1b;
     margin: 0;
     margin-bottom: -16px;
     text-align: center;
-    border-bottom: 2px solid #fffc5a;
+    border-bottom: 2px solid #181a1b;
 }

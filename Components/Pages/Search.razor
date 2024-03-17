@@ -27,20 +27,22 @@
     public bool searched = false;
     public List<Game> games = new List<Game>();
 
-    private GenreSelection genreSelectionRef;
-    private async Task RequestGenreSelections() {
+    private GenreSelection genreSelectionRef = new GenreSelection();
+    private Task RequestGenreSelections() {
         selectionGenres = genreSelectionRef.ReturnSelectedList();
+        return Task.CompletedTask;
     }
 
-    private PlatformSelection platformSelectionRef;
-    private async Task RequestPlatformSelections() {
+    private PlatformSelection platformSelectionRef = new PlatformSelection();
+    private Task RequestPlatformSelections() {
         selectionPlatforms = platformSelectionRef.ReturnSelectedList();
+        return Task.CompletedTask;
     }
 
     private async Task SearchGames() {
         searched = false;
-        RequestGenreSelections();
-        RequestPlatformSelections();
+        await RequestGenreSelections();
+        await RequestPlatformSelections();
 
         var requestObject = new SearchRequest {
             Genres = selectionGenres,
@@ -64,8 +66,9 @@
         }
     }
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         inputValue = searchString;
+        return Task.CompletedTask;
     }
 }

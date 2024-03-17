@@ -14,7 +14,7 @@
 
     public List<string> gameWebsites = new List<string>();
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         if(websites != null && websites.Count() > 0) {
             for(int i = 0; i < websites.Count(); i++) {
@@ -24,6 +24,8 @@
                 }
             }
         }
+
+        return Task.CompletedTask;
     }
 
     public string SiteString(string url) {

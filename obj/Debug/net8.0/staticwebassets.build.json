@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uEQvjYdMX0GiVAZJ89rN/Bj7Qf0baYeXglauDKa+01I=",
+  "Hash": "ZlBSO+r/C+c9YzUGSo1/jamEW9e4viHIok+y3cFh0IA=",
   "Source": "gamespace",
   "BasePath": "_content/gamespace",
   "Mode": "Default",
@@ -188,6 +188,25 @@
       "OriginalItemSpec": "wwwroot\\icons\\facebook.svg"
     },
     {
+      "Identity": "D:\\workD\\gamespace\\wwwroot\\icons\\github.svg",
+      "SourceId": "gamespace",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\workD\\gamespace\\wwwroot\\",
+      "BasePath": "_content/gamespace",
+      "RelativePath": "icons/github.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\github.svg"
+    },
+    {
       "Identity": "D:\\workD\\gamespace\\wwwroot\\icons\\gog.svg",
       "SourceId": "gamespace",
       "SourceType": "Discovered",
@@ -224,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\instagram.svg"
+    },
+    {
+      "Identity": "D:\\workD\\gamespace\\wwwroot\\icons\\mail.svg",
+      "SourceId": "gamespace",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\workD\\gamespace\\wwwroot\\",
+      "BasePath": "_content/gamespace",
+      "RelativePath": "icons/mail.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\mail.svg"
     },
     {
       "Identity": "D:\\workD\\gamespace\\wwwroot\\icons\\reddit.svg",

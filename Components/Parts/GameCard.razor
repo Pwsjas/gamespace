@@ -24,9 +24,11 @@
     private string url = "";
     private int displayRating = 0;
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         url = $"https://images.igdb.com/igdb/image/upload/t_cover_big/{@thumbnail}.jpg";
         displayRating = (int)rating;
+
+        return Task.CompletedTask;
     }
 }

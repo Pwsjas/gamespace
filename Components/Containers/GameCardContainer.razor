@@ -5,7 +5,7 @@
     @if (games != null && games.Count() > 0) {
         for (int i = 0; i < games.Count(); i++) {
             //Add a Genres null check here, and then remove genres if the data doesn't exist.
-            if(games[i].Cover != null && games[i]?.Genres?.Any() == true) {
+            if(games[i]?.Cover != null && games[i]?.Genres?.Any() == true) {
                 <GameCard id="@games[i].Id" gameName=@games[i].Name thumbnail=@games[i].Cover.Image_Id rating=@games[i].Rating genre=@games[i].Genres.FirstOrDefault().Name/>
             }
         }
@@ -43,10 +43,6 @@
             if (response.IsSuccessStatusCode)
             {
                 games = await response.Content.ReadFromJsonAsync<List<Game>>();
-                Console.WriteLine(games);
-                for (int i = 0; i < games.Count(); i++) {
-                    Console.WriteLine(games[i].Name);
-                }
             }
             else
             {
@@ -60,9 +56,6 @@
             if (response.IsSuccessStatusCode)
             {
                 games = await response.Content.ReadFromJsonAsync<List<Game>>();
-                for (int i = 0; i < games.Count(); i++) {
-                    Console.WriteLine(games[i].Name);
-                }
             }
             else
             {

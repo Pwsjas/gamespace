@@ -28,20 +28,20 @@
 
 @code {
     [Parameter]
-    public List<Video> Videos { get; set; }
+    public List<Video> Videos { get; set; } = new List<Video>();
     [Parameter]
-    public List<Artwork> Artworks { get; set; }
+    public List<Artwork> Artworks { get; set; } = new List<Artwork>();
     [Parameter]
-    public List<Screenshot> Screenshots { get; set; }
+    public List<Screenshot> Screenshots { get; set; } = new List<Screenshot>();
     [Parameter]
-    public string type { get; set; }
+    public string type { get; set; } = "";
 
     public List<string> imagePaths { get; set; } = new List<string>();
     public int position { get; set; } = 0;
     public string reelClass { get; set; } = "reel-slider middle";
     public int count { get; set; } = 8;
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         if(@type == "screenshots" && Screenshots != null && Screenshots.Count() > 0) {
             for(int i = 0; i < Screenshots.Count(); i++) {
@@ -67,6 +67,8 @@
                 }
             }
         }
+
+        return Task.CompletedTask;
     }
 
     private void MoveRight() {

@@ -92,7 +92,7 @@
     flex-wrap: wrap;
 
     gap: 8px;
-    max-width: 1080px;
+    max-width: 1000px;
     padding: 8px;
 }
 
@@ -107,6 +107,7 @@
     height: 40px;
     padding: 8px;
     
+    background-color: #181a1b;
     border: 2px solid white;
     border-radius: 10px;
     color: white;
@@ -116,15 +117,15 @@
 }
 
 .genre-selector:hover[b-tn3ymew7ud] {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }
 
 .selected[b-tn3ymew7ud] {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }
 /* _content/gamespace/Components/Containers/PlatformSelection.razor.rz.scp.css */
 .platform-selection[b-71nub47kgc] {
@@ -134,7 +135,7 @@
     justify-content: center;
 
     gap: 8px;
-    max-width: 1080px;
+    max-width: 1000px;
     padding: 8px;
 }
 
@@ -149,6 +150,7 @@
     height: 40px;
     padding: 8px;
     
+    background-color: #181a1b;
     border: 2px solid white;
     border-radius: 10px;
     color: white;
@@ -158,15 +160,15 @@
 }
 
 .platform-selector:hover[b-71nub47kgc] {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }
 
 .selected[b-71nub47kgc] {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     color: black;
-    border-color: #fffc5a;
+    border-color: #181a1b;
 }
 /* _content/gamespace/Components/Containers/ReelContainer.razor.rz.scp.css */
 .reel-container[b-s349tgmjyz] {
@@ -283,7 +285,11 @@ p[b-d2aph8k6cx] {
     align-items: center;
     justify-content: center;
 
-    gap: 4px;
+    gap: 8px;
+}
+
+.socials-image[b-d2aph8k6cx] {
+    filter: invert(100%) sepia(9%) saturate(7483%) hue-rotate(291deg) brightness(116%) contrast(93%);
 }
 /* _content/gamespace/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-pdrag3v85z] {
@@ -293,8 +299,6 @@ p[b-d2aph8k6cx] {
     padding-top: 64px;
     padding-bottom: 128px;
     min-height: 100vh;
-
-    background-color: #181a1b;
 }
 
 #blazor-error-ui[b-pdrag3v85z] {
@@ -394,11 +398,11 @@ h2[b-adxj62lrti] {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #181a1b;
     margin: 0;
     margin-bottom: -16px;
     text-align: center;
-    border-bottom: 2px solid #fffc5a;
+    border-bottom: 2px solid #181a1b;
 }
 /* _content/gamespace/Components/Pages/Home.razor.rz.scp.css */
 .home-container[b-383in698in] {
@@ -414,8 +418,8 @@ h2[b-adxj62lrti] {
 .section-header[b-383in698in] {
     margin-top: 32px;
     text-align: center;
-    color: white;
-    border-bottom: 2px solid #fffc5a;
+    color: #181a1b;
+    border-bottom: 2px solid #181a1b;
     padding-bottom: 8px;
 }
 /* _content/gamespace/Components/Pages/Search.razor.rz.scp.css */

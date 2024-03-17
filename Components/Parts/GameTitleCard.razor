@@ -25,8 +25,9 @@
 
     public string coverUrl { get; set; } = "";
 
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         coverUrl = $"https://images.igdb.com/igdb/image/upload/t_cover_big/{@coverId}.jpg";
+        return Task.CompletedTask;
     }
 }

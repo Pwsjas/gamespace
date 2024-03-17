@@ -14,15 +14,15 @@
 
 @code {
     [Parameter]
-    public List<Platform> Platforms { get; set; }
+    public List<Platform> Platforms { get; set; } = new List<Platform>();
     [Parameter]
-    public List<Genre> Genres { get; set; }
+    public List<Genre> Genres { get; set; } = new List<Genre>();
 
     public List<string> colors { get; set; } = new List<string>();
     public List<Genre> usableGenres { get; set; } = new List<Genre>();
     public List<Platform> relevantPlatforms { get; set; } = new List<Platform>();
     
-    protected override async Task OnInitializedAsync()
+    protected override Task OnInitializedAsync()
     {
         for(int i = 0; i < Genres.Count(); i++) {
             if(Genres[i].Name == "Shooter" || Genres[i].Name == "Fighting" || Genres[i].Name == "Sports" || Genres[i].Name == "Arcade") {
@@ -42,5 +42,7 @@
                 relevantPlatforms.Add(Platforms[i]);
             }
         }
+
+        return Task.CompletedTask;
     }
 }
