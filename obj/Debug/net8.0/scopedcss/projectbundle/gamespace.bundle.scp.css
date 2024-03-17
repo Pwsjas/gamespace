@@ -521,6 +521,7 @@ p[b-t3qipg2lkx] {
     min-height: 350px;
 }
 
+
 h2[b-9auu50wvcs] {
     color: white;
     font-size: 3rem;
@@ -640,20 +641,17 @@ p[b-9auu50wvcs] {
 .websites-container[b-r6vf0kcekt] {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
 }
 
 .websites-games[b-r6vf0kcekt] {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     
-    gap: 8px;
-}
-
-.websites-media[b-r6vf0kcekt] {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    width: 100%;
     gap: 8px;
 }
 
@@ -665,10 +663,7 @@ p[b-9auu50wvcs] {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    
-    padding: 8px;
-    border: 2px solid white;
-    border-radius: 10px;
+
 }
 
 .website-panel:hover[b-r6vf0kcekt] {

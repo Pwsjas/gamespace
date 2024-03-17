@@ -21,6 +21,50 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\discord.svg",
+      "PackagePath": "staticwebassets\\icons\\discord.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\epicgames.svg",
+      "PackagePath": "staticwebassets\\icons\\epicgames.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\facebook.svg",
+      "PackagePath": "staticwebassets\\icons\\facebook.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\gog.svg",
+      "PackagePath": "staticwebassets\\icons\\gog.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\instagram.svg",
+      "PackagePath": "staticwebassets\\icons\\instagram.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\reddit.svg",
+      "PackagePath": "staticwebassets\\icons\\reddit.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\steam.svg",
+      "PackagePath": "staticwebassets\\icons\\steam.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\twitch.svg",
+      "PackagePath": "staticwebassets\\icons\\twitch.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\twitter.svg",
+      "PackagePath": "staticwebassets\\icons\\twitter.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\wikipedia.svg",
+      "PackagePath": "staticwebassets\\icons\\wikipedia.svg"
+    },
+    {
+      "Id": "D:\\workD\\gamespace\\wwwroot\\icons\\youtube.svg",
+      "PackagePath": "staticwebassets\\icons\\youtube.svg"
+    },
+    {
       "Id": "D:\\workD\\gamespace\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
     },

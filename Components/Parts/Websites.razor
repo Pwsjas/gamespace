@@ -2,17 +2,7 @@
     @if(gameWebsites != null && gameWebsites.Count() > 0) {
         <section class="websites-games">
             @for(int i = 0; i < gameWebsites.Count(); i++) {
-                if(IsGameSite(gameWebsites[i])  == true) {
-                    <a class="website-panel">@gameWebsites[i]</a>
-                }
-            }
-        </section>
-
-        <section class="websites-media">
-            @for(int i = 0; i < gameWebsites.Count(); i++) {
-                if(IsGameSite(gameWebsites[i]) == false) {
-                    <a class="website-panel">@gameWebsites[i]</a>
-                }
+                <img src=@($"/icons/{@gameWebsites[i]}.svg") class="website-panel" height="32" width="32"/>
             }
         </section>
     }

@@ -5,6 +5,7 @@
         <p>@summary</p>
 
         <PlatformsAndGenres Genres="@Genres" Platforms="@Platforms"/>
+        <Websites websites="@websites"/>
     </section>
 </div>
 
@@ -19,6 +20,8 @@
     public List<Genre> Genres { get; set; } = new List<Genre>();
     [Parameter]
     public List<Platform> Platforms { get; set; } = new List<Platform>();
+    [Parameter]
+    public List<Website> websites { get; set; } = new List<Website>();
 
     public string coverUrl { get; set; } = "";
 

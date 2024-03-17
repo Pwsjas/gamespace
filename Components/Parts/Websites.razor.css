@@ -1,20 +1,17 @@
 .websites-container {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
 }
 
 .websites-games {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     
-    gap: 8px;
-}
-
-.websites-media {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    width: 100%;
     gap: 8px;
 }
 
@@ -26,10 +23,7 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
-    
-    padding: 8px;
-    border: 2px solid white;
-    border-radius: 10px;
+
 }
 
 .website-panel:hover {
